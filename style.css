@@ -122,6 +122,24 @@ button {
     object-fit: cover;
     image-rendering: pixelated;
 }
+#launchGame {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #32CD32;
+    color: #FFFFFF;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    box-shadow: 2px 2px 0 #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+#launchGame:hover {
+    background-color: #87CEFA;
+}
 #description {
     display: flex;
     justify-content: center;
@@ -457,6 +475,7 @@ button {
     .banner {
         width: 100%;
         height: auto;
+        overflow: visible;
     }
     .banner img {
         object-fit: contain;
@@ -464,8 +483,7 @@ button {
         height: auto;
     }
     .section {
-        margin-top: 4rem;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         height: auto;
     }
     #description {
@@ -515,9 +533,6 @@ button {
     .description-logo img {
         max-width: 120px;
         height: 120px;
-        border: 3px solid #fff;
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     #tokenomics {
@@ -625,4 +640,24 @@ button {
         padding: 1rem 5%;
         margin-top: 2rem;
     }
+    #intro {
+        height: 25rem;
+    }
+    #launchGame {
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #32CD32;
+        color: #FFFFFF;
+        font-family: 'VT323', monospace;
+        font-size: 18px;
+        letter-spacing: 0.3rem;
+        box-shadow: 2px 2px 0 #000;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        z-index: 15;
+    }
+    
 }
